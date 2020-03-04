@@ -27,7 +27,7 @@ total = 0 #=> initializes variable to store total gross per director
   t = 0 #=> iterates through movie titles
   while t < nds[d][:movies].length do 
      total += nds[d][:movies][t][:worldwide_gross]
-    t += 1
+    t += 1 #=> triggers next iteration for next movie
   end # => inner while loop for totaling movie gross
   my_hash.store("#{nds[d][:name]}", total)
   d += 1
